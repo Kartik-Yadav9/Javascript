@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+
+    <h1 class="h1a">HIII before dom, </h1>
+    <h2 id="h22">BYEEE</h2>
+    <!-- <button>click</button> -->
+    <img src="data:image/jpeg;base64,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">
+<img src="https://media.gq-magazine.co.uk/photos/65bb79b9ae1247ee3f1b63ec/1:1/w_1080,h_1080,c_limit/Deadpool.jpg">
+
+<button id="btn">1</button>
+<button id="btn">2</button>
+<button id="btn">3</button>
+<button id="btn">4</button>
+<button id="btn">5</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="firstofme" id="first">
+            My name is
+        </div>
+    </div> -->
+<!-- 
+    <input type="text" id="first" placeholder="number">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value=""></option>
+    </select>
+    <input type="text" id="second" placeholder="number">
+    
+    
+    <button onclick="sum()">Click me</button> -->
+
+
+
+    
+
+
+    <script src="dom.js">
+
+
+
+// function results(){
+//         let Num1 = parseFloat(document.getElementById("N1").value);
+//         let Num2 = parseFloat(document.getElementById("N2").value);
+//         let operator = document.getElementById("operator").value;
+
+        
+//             if (operator == "+") {
+//                 document.getElementById("result").value = Num1 + Num2;
+//             }
+//             else if (operator == "-") {
+//                 document.getElementById("result").value =  Num1 - Num2;
+//             }
+//             else if (operator == "*") {
+//                 document.getElementById("result").value =  Num1 * Num2;
+//             }
+//             else if (operator == '/') {
+//                 document.getElementById("result").value =  Num1 / Num2;
+//             }
+//             else {
+//                 "Please enter the appropriate value"
+//             }
+
+
+//         }
+
+
+
+
+
+
+
+
+
+        
+
+        // let d=document.getElementById("first").innerHTML= "<h2>KARTIK YADAV</h2>"
+
+
+
+
+
+
+
+        // const sum=() =>{
+        //     let a = parseFloat(document.getElementById("first").value);
+        //     let c=  parseFloat(document.getElementById("second").value);
+             
+        //     let operator = document.getElementById("operator").value;
+
+        //     if (operator== "+") {
+        //     document.getElementById.value(a + c)
+        //     }
+        //     else if (operator== "-") {
+        //         return(a - c)
+        //     }
+        //     else if (operator== "/") {
+        //         return(a / c)
+        //     }
+        //     else if (operator== "*") {
+        //         return(a * c)
+        //     } else {
+        //         return("invalid, please refresh")
+        //     }
+
+
+           
+        // } 
+
+
+
+        // let sum= ()=>{
+
+        // }
+        
+        
+    </script>
+</body>
+</html>

@@ -780,21 +780,39 @@
 // 7 8 9 10
 
 
-let n=4
-let nnum= 1
+// let n=4
+// let nnum= 1
 
-for(let i=1; i<=n; i++){
+// for(let i=1; i<=n; i++){
 
-   let num= " "
+//    let num= " "
 
-   for(let j=1; j<=i; j++){
-      num= num+nnum
-      // nnum++
-      nnum= nnum+1     
-   }
+//    for(let j=1; j<=i; j++){
+//       num= num+nnum
+//       // nnum++
+//       nnum= nnum+1     
+//    }
    
-   console.log(num);
+//    console.log(num);
   
    
-}
+// }
 
+
+
+
+
+n=5
+
+
+for(let row=1; row<=n; row++){
+   let num= 0
+   for(col=1; col<=incr; col++){
+      // console.log(col);
+      num+=col
+
+
+   }
+   console.log(num);
+   incr=incr+
+}
