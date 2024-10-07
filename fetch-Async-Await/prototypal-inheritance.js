@@ -1,3 +1,9 @@
+//by making one prototype, u cn access this method in all.
+
+
+
+
+
 function aaa(name,age){
     this.newName= name
     this.agge= age
@@ -17,4 +23,41 @@ console.log(first1);
 console.log(first2);
 
 let first3= new aaa('kartik', 2222)
+console.log(first3);
+
 first3.religion()
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function xyz(name,age){
+
+//     this.name= name
+//     this.age= age
+// }
+
+// xyz.prototype.myfunc= function(){
+//     console.log(`inside func: ${this.name}`);
+// }
+
+// xyz.prototype.yourfunc= function(){
+//     console.log(`inside func: ${this.name}`);
+// }
+
+
+
+
+// let person1= new xyz("kartik",24)
+// console.log(person1);
+
+// let  person2= new xyz("bruno",2)    //now the method will come inside proto
+// person2.myfunc()

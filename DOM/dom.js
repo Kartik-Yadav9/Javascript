@@ -1,12 +1,18 @@
 let a = document.querySelector('h1')
 a.classList.add('h1')
-a.innerHTML+= '<i>hiee</>'
+a.innerHTML= '<i>hieee</i>'
 a.style.color='red'
 a.style.backgroundColor= 'black'
 
 
-let b=document.getElementById('h22')
-b.innerText= 'from deadpool'
+let b=document.querySelector('.h22')
+b.innerText= 'uuu'
+
+
+let c= document.getElementById('test')
+c.style.color= 'white'
+c.style.backgroundColor= 'black'
+
 
 // let img= document.createElement('div')
 // document.querySelector('body').appendChild(img)
@@ -43,3 +49,17 @@ b.innerText= 'from deadpool'
 [10, 11, 12, 14],
 [20, 9, 8, 33],
 [17, 44,  39, 99] ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+

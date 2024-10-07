@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .boxes{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black ;
+            background-color: aqua;
+            display: none;
+        }
+        .first{
+            background-color: antiquewhite;
+        }
+        .second{
+            background-color: chocolate;
+        }
+        .four{
+            background-color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+   
+        <div >
+            <button id="fbut">first</button>
+            <button id="sbut">second</button>
+            <button id="tbut">third</button>
+            <button id='fobut'>four</button>
+        </div>
+
+        <div id="box1" class="boxes first">
+
+        </div>
+        <div id="box2" class="boxes second">
+            
+        </div>
+        <div id="box3" class="boxes">
+           
+        </div>
+        <div id="box4" class="boxes four">
+
+        </div>
+
+  
+
+
+    <script>
+        let btn1= document.getElementById('fbut')
+        let btn2= document.getElementById('sbut')
+        let btn3= document.getElementById('tbut')
+        let btn4= document.getElementById('fobut')
+
+
+        let box1=document.getElementById('box1')
+        let box2=document.getElementById('box2')
+        let box3=document.getElementById('box3')
+        let box4=document.getElementById('box4')
+        let allbox= document.querySelectorAll('.boxes')
+
+        btn1.addEventListener('click',function(){
+            
+            remove()
+             box1.style.display= "block"
+        })
+
+        btn2.addEventListener('click',function(){
+            remove()
+             box2.style.display= "block"
+        })
+        btn3.addEventListener('click',function(){
+            remove()
+            box3.style.display= "block"
+       })
+
+       btn4.addEventListener('click', function(){
+        remove()
+        box4.style.display= 'block'
+       })
+
+      let remove= function(){
+        allbox.forEach(item=>item.style.display= 'none')
+      }
+
+       
+
+        
+    </script>
+
+
+
+</body>
+
+
+</html>

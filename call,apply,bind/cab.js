@@ -1,55 +1,83 @@
-// function testss(){
-//     console.log(this);  //output is window
+
+
+
+let user1= {
+    name: "suraj",
+    age: 23,
+}
+
+let test= function(city){               
+    console.log(this.name, city);
+}
+
+test.call(user1,', delhi call')              //call use
+
+test.apply(user1,[", kanpur apply"])          //apply use in array is done
+
+
+let binding= test.bind(user1);
+binding( ", Mumbai bind")                    //bind use
+
+
+
+// let user2= {
+//     name: "chand",
+//     age: 27
 // }
-// testss()
 
-
-
-
-// obj={
-//     name:'kartik',
-//     age: 24
-// }                       //out obj after using Call
-// function tst(){
-//     console.log(this);
-// }
-
-// tst.call(obj)
+// test.apply(user2,[", lucknow apply"])                 //apply use in array
 
 
 
 
 
 
-// obj={
-//         name:'kartik',
-//         age: 24
-//     }                       //out obj after using Apply
-//     function tst(a,b,c){
-//         console.log(this);
-//         console.log(a,b,c);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let user1= {
+//     name: "suraj",
+//     age: 23,                        
+//     test: function(){               
+//         console.log(this.name);
 //     }
     
-//     tst.apply(obj,[1,2,3])
+// }
+
+// user1.test()
+
+
+// let user2= {
+//     name: "chand",
+//     age: 27
+// }
+
+// user1.test.call(user2)                 //using func in user2 from inside user1
+
+// let bind= user1.test.bind(user2)
+// bind();
 
 
 
 
-
-
-
-// obj={
-//         name:'kartik',
-//         age: 24
-//     }                       //out obj after using bind
-//     function tst(a,b,c){
-//         console.log(this);
-//         console.log(a,b,c);
-
-//     }
-    
-//     let newfunction= tst.apply(obj,[1,2,3])
-//     console.log(newfunction);
 
 

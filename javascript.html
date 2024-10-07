@@ -6,7 +6,50 @@
     <title>Javascript</title>
 </head>
 <body>
+    <!-- <p id="text">hii</p>
+    <button onclick="But()">Click me </button> -->
    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let text= document.getElementById('text')
+// let count=0
+// const But=()=>{
+//     count=count+1
+//     text.innerText=  count
+    
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // var num1 =108;
     // var num2 =243;
@@ -63,6 +106,19 @@
 
 
 
+
+// let a= parseFloat(prompt('type a number'))
+// let b=prompt('type a sign')
+// let c= parseFloat(prompt('type a number'))
+
+// if (b=='+'){
+//     console.log(a+c);
+// } else if(b=='-'){
+//     console.log(a-c);
+// }
+
+
+
     //let month = 2;
     //let year  = 2024;
 
@@ -81,6 +137,15 @@
     //else{
     //    console.log('invalid')
     //}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -455,17 +520,19 @@
 // let arry= [1,2,3,4,5,6,7,8,9,10]
 
 
-// let a = parseFloat(prompt("type a number"))
+// // let a = parseFloat(prompt("type a number"))
 
-// let result= arry.filter((item)=>{
-//     return 
-//     if( item%2==0){
-//     alert("this number is even");
-//     }
-//     else {
-//     alert("this number is odd");
-//     }
-// })
+// let odd =arry.filter((item)=>{
+//     return item%2!==0})
+// let even= arry.filter((item)=>{
+//     return item%2==0})
+
+// console.log(odd.join(' '),"odd");
+// console.log(even.join(' '),"even");
+
+
+    
+
 
 
 
@@ -553,12 +620,8 @@
 
 // for(let i=1; i<=5; i++){
 //     console.log(i);
-// for (let n = i; n < 0; n++) {
-//     console.log(n);
-    
-// }}
 
-
+// }
 
 
 
@@ -584,12 +647,100 @@
 
 
 
+// let reduction= [2,3,4,5]
+
+// let result= reduction.reduce((accumulator, currentvalue)=>{
+//         return    accumulator+currentvalue
+// },0)
+
+// console.log(result);
 
 
 
-// var str="Hello world";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let shopping= [
+//     {
+//         course: "jj",
+//         money: 4000,
+//     },
+//     {
+//         course: "jw",
+//         money: 3000,
+//     },                                                      //using reduce array
+//     {
+//         course: "je",
+//         money: 2000,
+//     },
+//     {
+//         course: "jq",
+//         money: 6000,
+//     }
+// ]
+
+
+
+// let result= shopping.reduce((accumulator, item)=>{
+//     return accumulator + item.money
+// },0)
+
+// console.log(`your total is ${result}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var str="Hello world";
+
+let lenth= str.length;
+
+let word= " "
+
+for(let i=lenth-1; i>=0; i--){
+    word+= str[i]
+}
+
+console.log(word);
+
+
+
+
+// let result= str.split("").reverse().join("")
+// console.log(result);
     
-// for(let i= str; i[])
+
 
 
 

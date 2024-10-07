@@ -63,14 +63,14 @@
 
 
 
-// function tests(){
-//     console.log("hiiii");
-//     return 'bye'
-// }                                       //calling return through rv
+function tests(){
+    console.log("hiiiia");
+    return 'bye'
+}                                       //calling return through rv
 
-// tests()
-// let rv = tests()
-// console.log(rv);
+tests()
+let rv = tests()
+console.log(rv);
 
 
 

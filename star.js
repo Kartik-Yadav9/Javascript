@@ -142,6 +142,7 @@
 //   * 
 
 
+
 // let n=5
 // let nos= n-1
 // let nstr =1
@@ -297,6 +298,28 @@
 // 1234
 // 12345
 
+// let n=5;
+
+
+// for(let i=1; i<=n; i++){
+//     let str= ""
+//     for(let j=1; j<=i; j++){
+//         str += j
+//     }
+
+//     console.log(str);
+  
+// }
+
+
+
+
+
+
+
+
+
+
 // let n=5
 
 // for(let i=1; i<=n; i++){
@@ -308,39 +331,6 @@
 //     console.log(str);
     
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-// n=5
-
-// for(let i=1; i<=n; i++){
-//     let str= ""
-    
-//     for(let j=1; j<=i; j++){
-//         str= str+ j
-       
-//     }
-
-//     console.log(str);
-// }
-
 
 
 
@@ -507,6 +497,8 @@
 // * * 
 // * 
 
+
+
 // n=5
 // nstr=1
 // nos= 5
@@ -549,6 +541,8 @@
 //       *     *
 //       *     *
 // * * * *     *
+
+
 
 // let n= 7
 
@@ -775,26 +769,55 @@
 
 
 // 1
+// 2 2
+// 3 3 3
+// 4 4 4 4 
+
+
+
+
+//  let no=4
+//  let count=0
+
+//  for(let i=1; i<=no; i++){
+//    let str= " "
+  
+//    for(let j=1; j<=i; j++){
+//       str+= 1 + count
+//    }
+//    console.log(str);
+//    count++
+//  }
+
+
+
+
+
+
+
+
+
+
+
+// 1
 // 2 3
 // 4 5 6
 // 7 8 9 10
 
 
-// let n=4
-// let nnum= 1
 
-// for(let i=1; i<=n; i++){
+// let n=1
 
-//    let num= " "
 
-//    for(let j=1; j<=i; j++){
-//       num= num+nnum
-//       // nnum++
-//       nnum= nnum+1     
+// for(let row=1; row<=4; row++){
+//    let line= ""
+//    for(col=0; col<row; col++){
+//       // console.log(col);
+//       line+= n+" "
+//       n++
+
 //    }
-   
-//    console.log(num);
-  
+//    console.log(line);
    
 // }
 
@@ -802,17 +825,76 @@
 
 
 
-n=5
 
 
-for(let row=1; row<=n; row++){
-   let num= 0
-   for(col=1; col<=incr; col++){
-      // console.log(col);
-      num+=col
+// var str="Hello world";
+
+// let lenth= str.length;
+
+// for(let i=0; i<=lenth-1; i--){
+//     console.log(str[i]);
+// }
+    
 
 
+
+// const func=(start,digits)=>{
+
+
+// let num= start
+// let result= ""
+
+
+//     for(let j=1; j<=digits; j++){
+//         result+= num  ;
+//         num=num-1
+//     }
+
+//     return result;
+// }
+
+// let rv= func(7,3);
+// console.log(rv);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// * * * * * 
+// *       * 
+// *       * 
+// *       * 
+// * * * * * 
+
+
+
+let n=5; 
+
+
+for(let i=1; i<=n; i++){
+   let str= ""
+
+   for(let j=1; j<=n; j++){
+      if(i==1 || i==5 || j==1 || j==5 ){
+         str+= "* "
+      }
+
+      else{
+         str += "  "
+      }
    }
-   console.log(num);
-   incr=incr+
+
+   console.log(str);
 }

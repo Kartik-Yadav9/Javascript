@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements Example</title>
+    <style>
+        p::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+        p::first-letter {
+            font-size: 2em;
+            color: red;
+        }
+        .content::before {
+            content: "Prefix: ";
+            color: green;
+            font-weight: bold;
+        }
+        .content::after {
+            content: " :Suffix";
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p >This is an example paragraph. The first line and the first letter have special styles applied.</p>
+    <p class="content">This paragraph has pseudo-elements before and after the content.</p>
+</body>
+</html>

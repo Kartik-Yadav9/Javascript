@@ -11,5 +11,5 @@ let breaks= setInterval(function(){
     count++
     prg.style.width= count+'%'   //count will take it % or px,otherwise it will not work
     
-}, 100);
+}, 10);
 

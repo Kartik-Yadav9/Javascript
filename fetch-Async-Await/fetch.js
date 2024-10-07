@@ -1,12 +1,54 @@
 // fetch('https://fakestoreapi.com/products/1')
 //             .then(res=>res.json())
-//             .then(json=>console.log(json))
+//             .then(jason=>console.log(jason))
+
+// const { reject } = require("async")
 
 
 
 // fetch('https://fakestoreapi.com/products/1')
 // .then(rel=>rel.json())                                              //trying fetch
-// .then(res=>console.log(res.description))
+// .then(res=>console.log(res.title))
+
+
+
+
+
+
+
+
+let fetches= new Promise((resolve, reject)=>{
+
+    fetch("https://fakestoreapi.com/products/1")
+    .then(raw=>raw.json())
+    .then(res=>resolve(res))
+    .catch(err=>reject(err))
+    
+})
+
+fetches
+.then(res=>(res))
+.then(res=>(res))
+.then(res=>(res))
+.then(res=>(res))
+.then(res=>(res))
+.then(res=>console.log(res.description))
+.catch(err=>console.log(err))
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -109,13 +151,13 @@
 
 
 
-function demo(url, callback){
-    fetch(url)
-    .then(res=>res.json())
-    .then(result=>callback(result))
+// function demo(url, callback){
+//     fetch(url)
+//     .then(res=>res.json())
+//     .then(result=>callback(result))
 
-}
+// }
 
-demo('https://fakestoreapi.com/products/1', function demos(result){
-    console.log(result);
-})
+// demo('https://fakestoreapi.com/products/1', function demos(result){
+//     console.log(result);
+// })

@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.watch{
+    
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    width: 600px;
+    height: 300px;
+    
+    border-radius: 30px;
+    margin: auto;
+ 
+    
+}
+
+p{
+    font-size: 150px;
+    padding: 30px;
+    
+}
+
+.buttons{
+    display: flex;
+   padding-left: 29.5%;
+    margin:  30px auto;
+    gap: 75px;
+    
+}
+
+.fbutton, .sbutton, .tbutton{
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+
+.fbutton{
+    background-color: rgb(57, 139, 18);
+    color: white;
+}
+
+.sbutton{
+    background-color: red;
+    color: white;
+}
+
+.tbutton{
+    background-color: rgb(58, 58, 233);
+
+    color: white;
+}
+
+.fbutton:active{
+    background-color: black;
+}
+
+.sbutton:active{
+    background-color: black;
+}
+
+.tbutton:active{
+    background-color: black;
+}
+
+h3{
+    font-size: 50px;
+    margin-left: 37%;
+    margin-bottom: 5%;
+    border: 1px solid;
+    display: inline-block;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: ease 0.3s;
+}
+
+h3:hover{
+    border: 1px solid;
+    transform: scale(1.1);
+    color: yellow;
+    
+    
+}

@@ -41,6 +41,8 @@ let remove = document.getElementById('remove');
 let ul = document.querySelector('ul');
 let liArray = []; // Array to store references to dynamically created li elements
 
+
+
 function func() {
     let namee = a.value;
     let newli = document.createElement('li');
