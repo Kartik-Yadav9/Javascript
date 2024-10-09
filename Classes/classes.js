@@ -95,39 +95,99 @@
 
 
 
-//----------------------------using overriding method using extend and super--------------------------------
+//---------------------------- using extend and super on method--------------------------------
+
+
+// class Parent{
+
+//     constructor(umar){
+//         this.name= umar
+//     }
+
+//     age(saal){
+//         console.log(`My name is ${this.name} and age is ${saal}`);   
+//     }
+
+// }
+
+
+
+
+
+// class Child extends Parent{
+
+// constructor(umar){
+//     super(umar)
+// }
+
+// defineAge(saal){
+//     super.age(saal)    //to call method it should be inside method
+// }
+
+// }
+
+
+// let ans= new Child('kartik')
+// ans.defineAge(15)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------- using overriding by using extend and super on method--------------------------------
+
 
 
 class Parent{
 
+        constructor(umar){
+            this.name= umar
+        }
+    
+        age(saal){
+            console.log(`My name is ${this.name} and age is ${saal}`);   
+        }
+    
+    }
+    
+    
+    
+    
+    
+    class Child extends Parent{
+    
     constructor(umar){
-        this.name= umar
+        super(umar)
     }
-
+    
     age(saal){
-        console.log(`My name is ${this.name} and age is ${saal}`);   
+        console.log(`My name is ${this.name} and age is ${saal} in overriding`);   
     }
-
-}
-
-
-
-
-
-class Child extends Parent{
-
-constructor(umar){
-    super(umar)
-}
-
-defineAge(saal){
-    super.age(saal)    //to call method it should be inside method
-}
-
-}
+    
+    }
+    
+    
+    let ans= new Parent('Iswar')
+    ans.age(7)
 
 
-let ans= new Child('kartik')
-ans.defineAge(15)
-
-
+    let ans2= new Child('kartik')
+    ans2.age(15)
