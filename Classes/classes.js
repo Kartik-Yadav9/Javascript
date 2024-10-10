@@ -2,24 +2,24 @@
 
 
 
-// class Form {                                //class serving as template for different users
+// class Form {                                                 //class serving as template for different users
            
 
 //     name(names){
 //         this.name= names
-//         alert(`My name is ${this.name}`)    //This means the property you are updating is called name
+//         alert(`My name is ${this.name}`)                    //This means the property you are updating is called name
 //     }
 
 
 //     age(umar){
 //         this.age= umar
-//         alert(`My age is ${this.age}`)    ///This means the property you are updating is called age
+//         alert(`My age is ${this.age}`)                      //This means the property you are updating is called age
 //     }
 
 // }
 
 // let kartik= new Form()
-// kartik.name('kartik')                                //directly calling from methods u cn call arguments here
+// kartik.name('kartik')                                       //directly calling from methods u cn call arguments here
 // kartik.age('25')
 
 // let nalin= new Form()
