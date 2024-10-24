@@ -95,10 +95,10 @@
 
 //foreach
 
-// let num= [1,2,3,4,5,6,7,8,9]
+let num= [1,2,3,4,5,6,7,8,9]
 
-// let ans= num.forEach((number,index)=>(console.log(number, "index: ", index)
-// ))
+let ans= num.forEach((number,index)=>(console.log(number, "index: ", index)
+))
 
 
 

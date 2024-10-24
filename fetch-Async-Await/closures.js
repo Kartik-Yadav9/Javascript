@@ -1,7 +1,7 @@
 // function upper(){
 //     let val= 26;
 //     let init= function(){
-//        ( `val is taken from lexical scope,${val}`)
+//        console.log( `val is taken from lexical scope,${val}`)
 //     }
 //         return init()
 //  }
@@ -9,7 +9,7 @@
 
 
 //  let c= upper()
-//  console.log(c);
+//  console.log(c)
 
 
 
@@ -20,21 +20,21 @@
 
 
 
-// function upper(){
-//     let val= 25;
+function upper(){
+    let val= 25;
    
    
-//    return  function init(){
-//        console.log( `val is taken from lexical scope,${val}`)
-//     }
+   return  function init(){
+       console.log( `val is taken from lexical scope,${val}`)
+    }
    
    
-//     // console.log(val);    //this will not work because written after return
+    // console.log(val);    //this will not work because written after return
         
-//  }
+ }
 
-//  let d= upper()
-// d()
+ let d= upper()
+d()
 
 
 

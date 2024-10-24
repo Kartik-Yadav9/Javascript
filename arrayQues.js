@@ -111,7 +111,7 @@
 // let a= ['A','B', 'W', 'X' , 'Y', 'Z']
 
 
-// let ans= a.slice(2,3)
+// let ans= a.slice(2,4)
 // console.log(ans);
 
 
@@ -213,8 +213,9 @@
 
 // Determine if a given value exists in the array.
 
-// const arr = [1, 2, 3, 44, 5];
-// const value = 44;
+const arr = [1, 2, 3, 44, 5];
+const value = 44;
+
 
 
 // let ans= arr.indexOf(44)
@@ -272,10 +273,10 @@
 
 // Reverse a String:
 
-const str = "hello world from kartik"; 
+// const str = "hello world from kartik"; 
 
-let res= str.split("").reverse().join("")
-console.log(res);
+// let res= str.split(" ").reverse().join(' ')
+// console.log(res);
 
 
 

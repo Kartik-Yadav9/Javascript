@@ -5,7 +5,7 @@ a.style.color='red'
 a.style.backgroundColor= 'black'
 
 
-let b=document.querySelector('.h22')
+let b=document.querySelector('#h22')
 b.innerText= 'uuu'
 
 
@@ -43,12 +43,12 @@ c.style.backgroundColor= 'black'
 
 
 
+ 
 
-
-[ [2,  3, 4,  5],
-[10, 11, 12, 14],
-[20, 9, 8, 33],
-[17, 44,  39, 99] ]
+// [ [2,  3, 4,  5],
+// [10, 11, 12, 14],
+// [20, 9, 8, 33],
+// [17, 44,  39, 99] ]
 
 
 

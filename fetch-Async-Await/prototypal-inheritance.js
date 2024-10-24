@@ -1,31 +1,31 @@
-//by making one prototype, u cn access this method in all.
+// //by making one prototype, u cn access this method in all.
 
 
 
 
 
-function aaa(name,age){
-    this.newName= name
-    this.agge= age
-    // this.caste= function religion() {
-    //     console.log(this.newName);
-    // }
+// function aaa(name,age){
+//     this.newName= name
+//     this.agge= age
+//     // this.caste= function religion() {
+//     //     console.log(this.newName);
+//     // }
  
-}
+// }
 
-aaa.prototype.religion =function() {
-    console.log(this.newName);
-}
+// aaa.prototype.religion =function() {
+//     console.log(this.newName);
+// }
 
-let first1= new aaa('ksy', 24)
-let first2= new aaa('ksey', 25)
-console.log(first1);
-console.log(first2);
+// let first1= new aaa('ksy', 24)
+// let first2= new aaa('ksey', 25)
+// console.log(first1);
+// console.log(first2);
 
-let first3= new aaa('kartik', 2222)
-console.log(first3);
+// let first3= new aaa('kartik', 2222)
+// console.log(first3);
 
-first3.religion()
+// first3.religion()
 
 
 
@@ -61,3 +61,40 @@ first3.religion()
 
 // let  person2= new xyz("bruno",2)    //now the method will come inside proto
 // person2.myfunc()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let x
+
+// console.log(x);
+
+
+// let y= null
+// console.log(y);
+
+
+let x= 'Kartik'
+
+let ans= x.split("").reverse().join(" ")
+console.log(ans);
