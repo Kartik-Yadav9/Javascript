@@ -37,43 +37,40 @@
 
 
 
+// Prototypal Inheritance is a feature in JavaScript where objects can inherit
+// properties and methods from another object via the prototype chain.
 
 
-// function xyz(name,age){
+function xyz(name,age){
 
-//     this.name= name
-//     this.age= age
-// }
+    this.name= name
+    this.age= age
+}
 
-// xyz.prototype.myfunc= function(){
-//     console.log(`inside func: ${this.name}`);
-// }
+xyz.prototype.myfunc= function(){                  //protype is using 
+    console.log(`inside func: ${this.name}`);
+}
 
-// xyz.prototype.yourfunc= function(){
-//     console.log(`inside func: ${this.name}`);
-// }
-
-
+xyz.prototype.yourfunc= function(){
+    console.log(`inside func: ${this.name}`);
+}
 
 
-// let person1= new xyz("kartik",24)
-// console.log(person1);
-
-// let  person2= new xyz("bruno",2)    //now the method will come inside proto
-// person2.myfunc()
+// prototype is a property of constructor functions (and classes) that is used to define properties 
+// and methods that will be shared by all instances created from that function.
 
 
-
+// prototype is where shared methods are stored, while __proto__ is the link that connects an object to its prototype.
 
 
 
 
 
+let person1= new xyz("kartik",24)
+console.log(person1);
 
-
-
-
-
+let  person2= new xyz("bruno",2)    //now the method will come inside proto
+person2.myfunc()
 
 
 
@@ -85,16 +82,20 @@
 
 
 
-// let x
-
-// console.log(x);
 
 
-// let y= null
-// console.log(y);
 
 
-let x= 'Kartik'
 
-let ans= x.split("").reverse().join(" ")
-console.log(ans);
+
+
+
+
+
+
+
+
+
+
+
+

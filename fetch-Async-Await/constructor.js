@@ -1,15 +1,16 @@
-// function consttt(x,y){
+function Consttt(x,y){
 
-//     this.name=x
-//     this.age= y
-// }
+    this.name=x
+    this.age= y
+}
 
-// let result= new consttt('kartik',24)
-// console.log(result);
-
-
+let result= new Consttt('kartik',24)
+console.log(result)
 
 
+
+// A constructor is a function that is called automatically when we create an object using the new keyword.
+// special method for defining properties and methods of objects.
 
 
 

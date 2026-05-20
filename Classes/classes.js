@@ -1,4 +1,5 @@
 //---------------------directly calling method from class without constructor-----------------------------
+// in side of class we dont use function keyword
 
 
 
@@ -45,7 +46,7 @@
 
 
 
-// -----------------------------------------------------using constructor, extend(inheritance) and super keyword-----------------------------------------
+// // -----------------------------------------------------using constructor, extend(inheritance) and super keyword-----------------------------------------
 
 
 // class First{
@@ -67,8 +68,8 @@
 //         this.age = age
 //     }
 
-//     test2(){
-//         console.log(`my name is ${this.name} and my age ${this.age}`);
+//     test2(color){
+//         console.log(`my name is ${this.name} and my age ${this.age} with color ${color}`);
 //     }
 // }
 
@@ -77,7 +78,7 @@
 // fir.test1()
 
 // let sec= new Second('second','pswd' , 2)
-// sec.test2()
+// sec.test2("red")
 
 
 
@@ -110,6 +111,8 @@
 
 // }
 
+// let ann= new Parent("kartik")
+// ann.age(26)
 
 
 
@@ -156,38 +159,43 @@
 
 
 
-class Parent{
+// class Parent{
 
-        constructor(umar){
-            this.name= umar
-        }
+//         constructor(umar){
+//             this.name= umar
+//         }
     
-        age(saal){
-            console.log(`My name is ${this.name} and age is ${saal}`);   
-        }
+//         age(saal){
+//             console.log(`My name is ${this.name} and age is ${saal}`);   
+//         }
     
-    }
-    
-    
+//     }
     
     
     
-    class Child extends Parent{
-    
-    constructor(umar){
-        super(umar)
-    }
-    
-    age(saal){
-        console.log(`My name is ${this.name} and age is ${saal} in overriding`);   
-    }
-    
-    }
     
     
-    let ans= new Parent('Iswar')
-    ans.age(7)
+//     class Child extends Parent{
+    
+//     constructor(umar){
+//         super(umar)
+//     }
+    
+//     age(saal){
+//         console.log(`My name is ${this.name} and age is ${saal} in overriding`);   
+//     }
+    
+//     }
+    
+    
+//     let ans= new Parent('Iswar')
+//     ans.age(7)
 
 
-    let ans2= new Child('kartik')
-    ans2.age(15)
+//     let ans2= new Child('kartik')
+//     ans2.age(15)
+
+
+
+
+

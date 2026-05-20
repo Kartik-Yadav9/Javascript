@@ -1,30 +1,30 @@
 
 
-async function kartik(){
-  try{
-    let x= await axios.get('https://fakestoreapi.com/products/1')
-    console.log(x.data.title);
-    return x
+// async function kartik(){
+//   try{
+//     let x= await axios.get('https://fakestoreapi.com/products/1')
+//     console.log(x.data.title);
+//     return x
 
-  } catch(error){
-   console.log( error.message)}
-}
+//   } catch(error){
+//    console.log( error.message)}
+// }
 
-console.log('test1');
-console.log('test2');
-
-
-async function result(){
-    let y=  await kartik()
-    console.log(y.data.price)
+// console.log('test1');
+// console.log('test2');
 
 
-console.log('test3-----');                  //test3 and test4 will run after result bcoz we have placed
-console.log('test4-----');                  //it in a async function
+// async function result(){
+//     let y=  await kartik()
+//     console.log(y.data.price)
 
-}
-// 
-result()
+
+// console.log('test3-----');                  //test3 and test4 will run after result bcoz we have placed
+// console.log('test4-----');                  //it in a async function
+
+// }
+// // 
+// result()
 
 
 
@@ -96,28 +96,26 @@ result()
 
 
 
-// console.log('upper')
-// console.log('upper')
+console.log('upper')
+console.log('upper')
 
 
-//  let noo= setInterval(() => {
+ let noo= setInterval(() => {
     
-//     async function xyz(){
-//         await fetch('https://fakestoreapi.com/products/1')
-//         .then(res=>res.json())
-//         .then(res=>console.log(res.category))
+    async function xyz(){
+        await fetch('https://fakestoreapi.com/products/1')
+        .then(res=>res.json())
+        .then(res=>console.log(res.category))
     
-//         console.log('in async lower')
+        console.log('in async lower')
     
-//     }
-//     xyz()
-//     clearInterval(noo)
+    }
+    xyz()
+    clearInterval(noo)
 
-//  },1000); 
+ },1000);  
 
-// console.log('out async lower')
-
-
+console.log('out async lower')
 
 
 
@@ -127,23 +125,40 @@ result()
 
 
 
-// let clr =setInterval(()=>{
-//     function ax(){
-//         axios.get('https://fakestoreapi.com/products/1').then((res)=>(
-//            console.log(res.data.price)
+
+
+let clr =setInterval(()=>{
+    function ax(){
+        axios.get('https://fakestoreapi.com/products/1').then((res)=>(
+           console.log(res.data.price)
            
-//        ))
-//    }
+       ))
+   }
 
-//    ax()
-//    clearInterval(clr)
+   ax()
+   clearInterval(clr)
 
-//    console.log('axios used');
+   console.log('axios used');
    
 
-// },3000)
+},2000)
 
 
 
 
+
+
+
+
+
+
+
+  //   function ax(){
+  //       axios.get('https://fakestoreapi.com/products/1').then((res)=>(
+  //          console.log(res.data.price)
+           
+  //      ))
+  //  }
+
+  //  ax()
 

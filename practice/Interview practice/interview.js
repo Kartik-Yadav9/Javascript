@@ -1,3 +1,22 @@
+// What is hooks?
+
+// Before hooks, class components were required to manage state and
+//  lifecycle methods, making code more complex. Hooks simplify this
+//   by allowing functional components to handle state, effects, and more,
+//    making the code cleaner and easier to understand.
+
+
+
+
+
+
+
+
+
+
+
+
+
 //DOM
 
 // const { reject } = require("async")
@@ -6,27 +25,51 @@
 // let div = document.querySelector('div')
 
 // div.addEventListener('click', ()=>{        //event bubbling
-//     console.log('div');
+//     console.log('div');  
+// })
+
+// let btn= document.querySelector('button')
+
+// btn.addEventListener('click', ()=>{
+//     console.log('child');
     
 // })
 
 
 
 
+// let parent= document.querySelector('ul')
+// parent.addEventListener('click', (e)=>{                 //event delegation
+//     console.log(`clicked ${e.target.innerText}`);
+    
+// })
+
+// Event delegation---->is a technique in JavaScript where a single event listener is 
+// attached to a parent element to handle events on its child elements
 
 
 
 
-// let div = document.querySelector('div')
-// let button = document.querySelector('button')
 
-// div.addEventListener('click', ()=>{        //event capturing
-//     console.log('div');
-// }, true)
 
-// button.addEventListener('click', ()=>{        
-//     console.log('button');
-// }, true)
+
+
+
+
+
+
+
+
+let div = document.querySelector('div')
+let button = document.querySelector('button')
+
+div.addEventListener('click', ()=>{        //event capturing
+    console.log('div');
+}, true)
+
+button.addEventListener('click', ()=>{        
+    console.log('button');
+}, true)
 
 
 
@@ -95,10 +138,10 @@
 
 //foreach
 
-let num= [1,2,3,4,5,6,7,8,9]
+// let num= [1,2,3,4,5,6,7,8,9]
 
-let ans= num.forEach((number,index)=>(console.log(number, "index: ", index)
-))
+// let ans= num.forEach((number,index)=>(console.log(number, "index: ", index)
+// ))
 
 
 
@@ -341,34 +384,34 @@ let ans= num.forEach((number,index)=>(console.log(number, "index: ", index)
 //call apply bind
 
 
-let user1= {
-    name:'kartik',
-    age: 25
-}
+// let user1= {
+//     name:'kartik',
+//     age: 25
+// }
 
 
 
-let b = function (male){
-    console.log(`Myself ${this.name}, age ${this.age}, ${male}`);    
-}
+// let b = function (male){
+//     console.log(`Myself ${this.name}, age ${this.age}, ${male}`);    
+// }
 
-b.call(user1, 'male')
-
-
+// b.call(user1, 'male')
 
 
-let user2= {
-    name: 'bruno',
-    age: 3
-}
-
-b.call(user2, 'female')
-
-b.apply(user2, ['apply'])
 
 
-let bindfunc= b.bind(user1, 'bind')
-bindfunc();  //this is a function
+// let user2= {
+//     name: 'bruno',
+//     age: 3
+// }
+
+// b.call(user2, 'female')
+
+// b.apply(user2, ['apply'])
+
+
+// let bindfunc= b.bind(user1, 'bind')
+// bindfunc();  //this is a function
 
 
 
@@ -445,24 +488,24 @@ bindfunc();  //this is a function
 // console.log(p1);
 
 
-
+ 
 // p1.proto()
 
 
-function Cons(name){
-    this.name= name
-}
+// function Cons(name){
+//     this.name= name
+// }
 
-Cons.prototype.func=function(){
-    console.log(`My name is ${this.name}`);
+// Cons.prototype.func=function(){
+//     console.log(`My name is ${this.name}`);
     
-}
+// }
 
-let e1= new Cons('bruno')
-console.log(e1);
+// let e1= new Cons('bruno')
+// console.log(e1);
 
 
-e1.func()
+// e1.func()
 
 
 
@@ -520,6 +563,11 @@ e1.func()
 
 // let ans =parent()
 // ans()
+
+
+
+
+
 
 
 

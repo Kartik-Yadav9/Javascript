@@ -1,17 +1,46 @@
 
 
-// let func= (callback, name)=>{
+let func= (callback, name)=>{
     
-//     console.log("hii "+ name);
-//     callback()
+    console.log("hii "+ name);
+    callback()
     
-// }                                                            //callback function
+}                                                            //callback function
 
-// let call= ()=>{
-//    console.log("bye"); 
+let call= ()=>{
+   console.log("bye"); 
+}
+
+func(call,"Kartik")
+
+
+
+
+
+
+
+
+// function greetMorning(callback) {
+//     console.log("Good Morning! 🌅");
+//     callback();  // Call the next function
 // }
 
-// func(call,"Kartik")
+// function greetEvening(callbacks) {
+//     console.log("Good Evening! 🌆");
+//     callbacks();  // Call the next function
+// }
+
+// function greetNight() {
+//     console.log("Good Night! 🌙");
+// }
+
+// // Nesting the functions (callback hell)
+// greetEvening(() => {
+//     greetMorning(() => {
+//         greetNight();
+//     });
+// });
+
 
 
 
@@ -25,35 +54,35 @@
 
 //callback hell
 
-function first(second) {
-    console.log("test 1");
-    second();
-}
+// function first(second) {
+//     console.log("test 1");
+//     second();
+// }
 
-function second(third) {
-    console.log("test 2");
-    third();
-}
+// function second(third) {
+//     console.log("test 2");
+//     third();
+// }
 
-function third(fourth) {
-    console.log("test 3");
-    fourth();
-}
+// function third(fourth) {
+//     console.log("test 3");
+//     fourth();
+// }
 
-function fourth(taskdone) {
-    console.log("test 4");
-    taskdone()
-}
+// function fourth(taskdone) {
+//     console.log("test 4");
+//     taskdone()
+// }
 
-// Callback Hell Example
-first(() => {
-    second(() => {
-        third(() => {
-            fourth(()=>
-                console.log("task done"));
-        });
-    });
-});
+// // Callback Hell Example
+// first(() => {
+//     second(() => {
+//         third(() => {
+//             fourth(()=>
+//                 console.log("task done"));
+//         });
+//     });
+// });
 
 
 

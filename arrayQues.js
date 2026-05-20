@@ -59,6 +59,27 @@
 
 
 
+// find the larest element
+
+
+// const arr = [3, -2, 1, 5, 8];
+
+// let largest= arr[0]
+
+// for(let i=0; i<=arr.length; i++){
+//     if(arr[i] > largest){
+//         largest = arr[i]
+//     }
+    
+    
+// }
+
+// console.log(largest);
+
+
+
+
+
 
 
 
@@ -111,7 +132,7 @@
 // let a= ['A','B', 'W', 'X' , 'Y', 'Z']
 
 
-// let ans= a.slice(2,4)
+// let ans= a.slice(0,4)
 // console.log(ans);
 
 
@@ -121,7 +142,7 @@
 
 
 
-// let nas= a.splice(2,  1 , 22)
+// let nas= a.splice(0,  1 , 22)
 
 // console.log(a);
 
@@ -213,8 +234,8 @@
 
 // Determine if a given value exists in the array.
 
-const arr = [1, 2, 3, 44, 5];
-const value = 44;
+// const arr = [1, 2, 3, 44, 5];
+// const value = 44;
 
 
 
@@ -379,3 +400,6 @@ const value = 44;
 //         break;
 //     }
 // }
+
+
+

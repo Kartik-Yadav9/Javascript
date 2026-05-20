@@ -17,12 +17,12 @@
 
 
 
-let naew = new Promise((resolve,reject)=>{
-    resolve('done'), reject('no')
-})
+// let naew = new Promise((resolve,reject)=>{
+//     resolve('done'), reject('no')
+// })
 
-naew.then((res)=>console.log(res))
-.catch((err)=>console.log(err))
+// naew.then((res)=>console.log(res))
+// .catch((err)=>console.log(err))
 
 
  
@@ -92,6 +92,38 @@ naew.then((res)=>console.log(res))
 //       console.error('Error:', error);
 //     });
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+let arr= ["rahul",  "saif", "john", "sam", "rohit"]
+
+
+let len= arr.length
+
+for(let i=0; i<= len-1; i++){
+    let temp= arr[0];
+    arr[i]  >temp
+    temp= arr[i];
+
+    console.log(temp);
+
+}
+
+
+
+
+
+
 
 
 

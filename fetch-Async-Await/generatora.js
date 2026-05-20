@@ -38,6 +38,8 @@
 
 
 
+// Generators are defined using the function* syntax and 
+// use the yield keyword to return values one at a time.(yield <--> return)
 
 function* genn(){
 
@@ -54,10 +56,10 @@ let re= genn()  // This does not run myGenerator's code immediately, re is an it
 
 console.log(re.next());
 console.log(re.next());
-console.log(re.next());
-console.log(re.next());
+console.log(re.next().value);
 console.log(re.next());  //done is false because still more values are present
 console.log(re.next());
+console.log(re.next());
 
 
 
@@ -81,15 +83,17 @@ console.log(re.next());
 
 
 
-function* gen() {
-    try {
-        yield 1;
-        yield 2;
-    } catch (e) {
-        console.log('Caught:', e);
-    }
-}
 
-const g = gen();
-console.log(g.next().value); // 1
-console.log(g.throw('Errorc!')); // Caught: Error!
+
+// function* gen() {
+//     try {
+//         yield 1;
+//         yield 2;
+//     } catch (e) {
+//         console.log('Caught:', e); 
+//     }
+// }
+
+// const g = gen();
+// console.log(g.next().value); // 1
+// console.log(g.throw('Errorc!')); // Caught: Error!

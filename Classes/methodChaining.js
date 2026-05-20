@@ -48,7 +48,7 @@
 
 
 
-//-------------------------------------------little bit difficult-------------------------------------------------
+//------------------------------------------------------------------------------------------------
 
 
 class Bodmas{
@@ -58,15 +58,15 @@ class Bodmas{
     }
 
     add(add){
-        this.val= this.val + add
-        console.log(this.val);
-        return this   
+      this.val = this.val + add;
+      console.log(this.val);
+      return this; //It allows you to call another method on the same object.
     }
 
     subs(sub){
         this.val= this.val - sub
         console.log(this.val , 'sub');
-        return this
+        return this  
         
     }
 

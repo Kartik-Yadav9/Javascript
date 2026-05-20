@@ -1,0 +1,14 @@
+<div id="parent">
+    <button id="child">Click me!</button>
+  </div>
+  
+  <script>
+    document.getElementById('parent').addEventListener('click', function() {
+      console.log(' parent div!');
+    }, true);  // `true` here specifies capturing phase
+    
+    document.getElementById('child').addEventListener('click', function() {
+      console.log('Child clicked!');
+    });
+  </script>
+  

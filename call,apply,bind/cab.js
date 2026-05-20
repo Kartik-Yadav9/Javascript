@@ -1,13 +1,13 @@
 
 
 
-let user1= {
-    name: "suraj",
-    age: 23,
+let user1= {                                      // In JavaScript, call, apply, and bind are methods available
+    name: "suraj",                                // on functions that allow you to explicitly set the
+    age: 23,                                      // value of this and pass arguments to a function.   
 }
 
 let test= function(city){               
-    console.log(this.name, city);
+    console.log(this.name,this.age, city);
 }
 
 test.call(user1,', delhi call')              //call use
@@ -20,12 +20,12 @@ binding( ", Mumbai bind")                    //bind use
 
 
 
-// let user2= {
-//     name: "chand",
-//     age: 27
-// }
+let user2= {
+    name: "chand",
+    age: 27
+}
 
-// test.apply(user2,[", lucknow apply"])                 //apply use in array
+test.apply(user2,[", lucknow apply"])                 //apply use in array
 
 
 
