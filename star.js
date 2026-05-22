@@ -703,7 +703,7 @@
 // for(let i=1; i<=n; i++){
 //    if(!arr.includes(i))
 //    console.log(i);
-   
+
 // }
 //--------------------------------------------------------
 // let totalsum = 0;
@@ -721,46 +721,96 @@
 
 // console.log(ans);
 
-
-
-
-
 // Rotate array k times
 // Chunk array into groups
 // Sort array of objects by property
-
 
 // 2. String Logic
 
 // Very common in interviews.
 
-
 // Reverse a string
-// Check palindrome
+// Check palindrome------------------
 
-const a = "madams"
+// let word= "swiss"
 
-const l=a.length
+// let lg= word.length
+// for(let i=0; i<lg; i++){
+//     let count=0
+//     for(let j=0; j<lg; j++){
+//         if(word[i]===word[j]){
+//             count++
+//         }
+        
+            
+//         }
+//         if (count === 1) {
+//           console.log(`first letter that doesn't repeat, ${word[i]}`);
+//           break
+          
+//         }
+// }
 
-let str=""
 
-for(let i=l-1; i>=0; i--){
-  str+= a[i]
-    
-    
-}
-console.log(str);
-if(str===a){
-    console.log(true);
-    
-}else{
-    console.log(false);
-    
-}
+// Find Prime Numbers from 1 to N----------
+
+// n=80
+// for(let i=1; i<=n; i++){
+//     let prime=0
+//     for(let j= 1; j<=i; j++){
+//         if(i%j===0){
+//             prime++
+//         }
+//     }
+
+//     if(prime===2){
+//         console.log(i);
+        
+//     }
+// }
+
+// const a = "madams"
+
+// const l=a.length
+
+// let str=""
+
+// for(let i=l-1; i>=0; i--){
+//   str+= a[i]
+
+// }
+// console.log(str);
+// if(str===a){
+//     console.log(true);
+
+// }else{
+//     console.log(false);
+
+// }
+
+// Count vowels----------
+
+// let a = "are you";
+
+// let vowels = 0;
+// for (let i = 0; i < a.length; i++) {
+//   if (
+//     (a[i] == "a") ||
+//     (a[i] == "e") ||
+//     (a[i] == "i") ||
+//     (a[i] == "o") ||
+//     (a[i] == "u")
+//   ) {
+//     vowels++;
+//   } else {
+//     a[i];
+//   }
+// }
+// console.log(vowels);
 
 
-// Count vowels
-// Find first non repeating character
+
+// Find first non repeating character--------
 // Check anagram
 // Remove duplicate characters
 // Capitalize first letter of each word
