@@ -741,16 +741,14 @@
 //         if(word[i]===word[j]){
 //             count++
 //         }
-        
-            
+
 //         }
 //         if (count === 1) {
 //           console.log(`first letter that doesn't repeat, ${word[i]}`);
 //           break
-          
+
 //         }
 // }
-
 
 // Find Prime Numbers from 1 to N----------
 
@@ -765,7 +763,7 @@
 
 //     if(prime===2){
 //         console.log(i);
-        
+
 //     }
 // }
 
@@ -808,11 +806,51 @@
 // }
 // console.log(vowels);
 
-
-
 // Find first non repeating character--------
-// Check anagram
-// Remove duplicate characters
+// let input = "aabbcdde";
+
+// for (let i = 0; i < input.length; i++) {
+//   let ans = 0;
+
+//   for (let j = 0; j < input.length; j++) {
+//     if (input[i] === input[j]) {
+//       ans++;
+//     }
+//   }
+//   if (ans === 1) {
+//     console.log(input[i]);
+//     break; //because we want only first
+//   }
+// }
+
+// Check anagram--------
+
+let str1 = "hello";
+let str2 = "world";
+
+
+for (let i = 0; i < str1.length; i++) {
+  let ans = 0;
+
+  for (let j = 0; j < str2.length; j++) {
+    if (str1[i] === str2[j]) {
+      ans++;
+    }
+  }
+  if (ans === 1) {
+    console.log(true)
+    
+  }else{
+    console.log(false);
+    
+  }
+}
+
+// Remove duplicate characters-----
+
+let str = "aabbcc";
+
+
 // Capitalize first letter of each word
 // Longest word in sentence
 
