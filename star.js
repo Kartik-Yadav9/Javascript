@@ -825,34 +825,63 @@
 
 // Check anagram--------
 
-let str1 = "hello";
-let str2 = "world";
+// let str1 = "hello";
+// let str2 = "world";
 
 
-for (let i = 0; i < str1.length; i++) {
-  let ans = 0;
+// for (let i = 0; i < str1.length; i++) {
+//   let ans = 0;
 
-  for (let j = 0; j < str2.length; j++) {
-    if (str1[i] === str2[j]) {
-      ans++;
-    }
-  }
-  if (ans === 1) {
-    console.log(true)
+//   for (let j = 0; j < str2.length; j++) {
+//     if (str1[i] === str2[j]) {
+//       ans++;
+//     }
+//   }
+//   if (ans === 1) {
+//     console.log(true)
     
-  }else{
-    console.log(false);
+//   }else{
+//     console.log(false);
     
-  }
-}
+//   }
+// }
 
 // Remove duplicate characters-----
 
-let str = "aabbcc";
+// let str = "aabbccd";
+// let ans= str.split("").filter((item, index, arr)=>
+//   (arr.indexOf(item)===index)
+// ).join(" ")
+// console.log(ans);
+
+// let ans=""
+// for(let i=0; i<str.length; i++){
+// if(!ans.includes(str[i])){
+//   ans+=str[i]
+// }
+// }
+// console.log(ans);
 
 
-// Capitalize first letter of each word
-// Longest word in sentence
+
+
+
+// Capitalize first letter of each word----------
+// let str = "hello world from javascript";
+
+// let upper=""
+// for(let i=0; i<str.length; i++){
+// if([i]===0 || str[i-1]=== " " ){
+//  upper+= str[i].toUpperCase()
+// }else{
+//   upper += str[i];
+// }
+
+
+// }
+// console.log(upper);
+
+// Longest word in sentence-------
 
 // Example:
 
