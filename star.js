@@ -828,7 +828,6 @@
 // let str1 = "hello";
 // let str2 = "world";
 
-
 // for (let i = 0; i < str1.length; i++) {
 //   let ans = 0;
 
@@ -839,10 +838,10 @@
 //   }
 //   if (ans === 1) {
 //     console.log(true)
-    
+
 //   }else{
 //     console.log(false);
-    
+
 //   }
 // }
 
@@ -862,10 +861,6 @@
 // }
 // console.log(ans);
 
-
-
-
-
 // Capitalize first letter of each word----------
 // let str = "hello world from javascript";
 
@@ -877,12 +872,30 @@
 //   upper += str[i];
 // }
 
-
 // }
 // console.log(upper);
 
 // Longest word in sentence-------
+let inp = "I love javascript programming";
 
+let word = "";
+let biggest = "";
+
+for (let i = 0; i < inp.length; i++) {
+  if (inp[i] !== " ") {
+    word += inp[i];
+  } else {
+    if (word.length > biggest.length) {
+      biggest = word;
+    }
+    word = "";
+  }
+
+  if (word.length > biggest.length) {
+    biggest = word;
+  }
+}
+console.log(biggest);
 // Example:
 
 // let str = "hello";
